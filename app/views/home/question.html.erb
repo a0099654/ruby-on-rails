@@ -16,8 +16,10 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
             <div>
-                <button type="button" class="btn btn-success btn-sm">Submit new answer</a>
+                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#answerModal">Submit new answer</a>
             </div>
+
+            <%= render 'home/new_answer_form' %>
 
             <div class="media">
                 <div class="media-left">
