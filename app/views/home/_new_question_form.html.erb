@@ -7,7 +7,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="/questions" method="POST">
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="inputEmail">Email address</label>
@@ -18,7 +18,6 @@
                         <label for="inputQuestion">Question</label>
                         <textarea class="form-control" id="inputQuestion" placeholder="What would you like to ask" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
