@@ -7,16 +7,17 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <%= form_for:answer, url:'/answer' , html: { class:'form-horizontal'} do %>
+        <%= form_for:answer, url:'/answers' , html: { class:'form-horizontal'} do %>
+            <input type="hidden" name="answer[question_id]" value="<%= @question.id %>" />
             <div class="modal-body">
                 <div class="form-group">
                     <label for="inputEmail">Email address</label>
-                    <input type="email" name="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <input type="email" name="answer[email]" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
                     <label for="inputQuestion">Answer</label>
-                    <textarea class="form-control" name="question_body" id="inputQuestion" placeholder="What answer would you like to say" required></textarea>
+                    <textarea class="form-control" name="answer[body]" id="inputQuestion" placeholder="What answer would you like to say" required></textarea>
                 </div>
             </div>
         <div class="modal-footer">
