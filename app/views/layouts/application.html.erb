@@ -15,7 +15,7 @@
     <div class="container">  
       <%= yield %>
       <%= render 'home/new_question_form' %>
-      <div class="well"><%= session[:current_user_email] || 'No email has been saved' %></div>
+      <div class="well"><%= current_user_email %></div>
     </div>
   </body>
 </html>
