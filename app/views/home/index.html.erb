@@ -9,9 +9,9 @@
         </div>
         <div class="media-body">
           <h5 class="mt-0"><%= q.email %> asked: </h5>
-          <div class="time"><%= time_ago_in_words q.created_at %> ago</div>
+          <div class="time hidden-xs"><%= time_ago_in_words q.created_at %> ago</div>
           <%= truncate q.body, length: 300 %>
-          <div class="view-answer-button">
+          <div class="view-answer-button hidden-xs">
             <a href="<%= question_path(q) %>" class="btn btn-success btn-xs">View Answers</a>
           </div>
         </div>
