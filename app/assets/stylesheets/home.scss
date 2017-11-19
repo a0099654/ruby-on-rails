@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
-
 .boxes {
     .media {
         background-color: azure;
@@ -11,16 +10,20 @@
         margin: 10px;
         padding: 10px;
         position: relative;
-        .time{
+        .time {
             color: #666666;
             position: absolute;
             right: 8px;
             top: 8px;
         }
-        .view-answer-button{
+        .view-answer-button {
             position: absolute;
             right: 8px;
             bottom: 8px;
+        }
+        &:hover {
+            background-color: whitesmoke;
+            cursor: pointer;
         }
     }
 }
