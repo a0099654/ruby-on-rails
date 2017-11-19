@@ -3,10 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
 
-.media {
-    background-color: azure;
-    border: thin solid #cce;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
+.boxes {
+    .media {
+        background-color: azure;
+        border: thin solid #cce;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+    }
 }
