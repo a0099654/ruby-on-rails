@@ -6,7 +6,8 @@ class MainMailer < ApplicationMailer
   #   en.main_mailer.notify_question_author.subject
   #
   def notify_question_author(answer)
-    sleep 5
+
+    HardWorker.perform_async('mail_sender', 10)   
     
     @greeting = "Hi"
     @answer = answer
