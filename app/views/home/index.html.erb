@@ -11,7 +11,7 @@
           <h5 class="mt-0"><%= q.email %> asked: </h5>
           <div class="time"><%= time_ago_in_words q.created_at %> ago</div>
           <%= q.body %>
-          <div>
+          <div class="view-answer-button">
             <a href="<%= question_path(q) %>" class="btn btn-success btn-xs">View Answers</a>
           </div>
         </div>

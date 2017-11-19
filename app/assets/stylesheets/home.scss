@@ -12,9 +12,15 @@
         padding: 10px;
         position: relative;
         .time{
+            color: #666666;
             position: absolute;
             right: 8px;
             top: 8px;
+        }
+        .view-answer-button{
+            position: absolute;
+            right: 8px;
+            bottom: 8px;
         }
     }
 }
